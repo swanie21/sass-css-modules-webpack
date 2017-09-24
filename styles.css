@@ -1,0 +1,28 @@
+body {
+  background: #ff6666;
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+.App__app___3sz-J {
+  text-align: center; }
+
+.App__logo___3FPdg {
+  animation: App__App-logo-spin___3QAkS infinite 2s linear;
+  height: 80px;
+  padding-top: 80px; }
+
+.App__header___3Ee_z {
+  background-color: #3c3c3c;
+  height: 300px;
+  padding: 20px;
+  color: white; }
+
+@keyframes App__App-logo-spin___3QAkS {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=styles.css.map*/
