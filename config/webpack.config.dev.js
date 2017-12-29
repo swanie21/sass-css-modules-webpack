@@ -183,7 +183,7 @@ module.exports = {
       // in development "style" loader enables hot editing of CSS.
       {
         test: /\.css$/,
-        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+        use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
           use: [
             {
@@ -195,11 +195,11 @@ module.exports = {
             },
           'postcss-loader'
           ]
-        }))
+        })
       },
       {
         test: /\.scss$/,
-        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+        use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
           use: [
             {
@@ -213,7 +213,7 @@ module.exports = {
             },
           'sass-loader'
           ]
-        }))
+        })
       },
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "file" loader exclusion list.
