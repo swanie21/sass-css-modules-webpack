@@ -66,10 +66,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 },
 
 plugins: [
-  new ExtractTextPlugin({ filename: 'styles.css', allChunks: true }),
+  new ExtractTextPlugin({ filename: 'styles.css', allChunks: true, disable: process.env.NODE_ENV !== 'production' }),
 ]  
 
 ```
+
+* In order for hot reloading you will need to disable the Extract Text Plugin in the dev environment. This can be accomplished by adding `disable: process.env.NODE_ENV !== 'production'` in the ExtractTextPlugin options.
+
 
 Create `postcss.config.js` file
 
